@@ -1,0 +1,495 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200205.110424.50726.0.001.json",
+    "dumpEventTime": "2020-02-05T11:04:24Z",
+    "dumpEventTimeStamp": "1580915064526",
+    "processId": 50726,
+    "cwd": "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet",
+    "commandLine": [
+      "node",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/node_modules/.bin/eslint",
+      "--cache",
+      "--format=pretty",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/.eslintrc.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/Routes.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/actions/counter.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/components/BlockEditor.jsx",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/components/CodeEditor.jsx",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/components/Counter.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/components/Home.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/components/Sidebar.jsx",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/components/Theme.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/containers/App.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/containers/CounterPage.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/containers/HomePage.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/containers/Root.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/index.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/main.dev.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/menu.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/reducers/counter.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/reducers/index.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/reducers/types.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/store/configureStore.dev.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/store/configureStore.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/app/store/configureStore.prod.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/babel.config.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/configs/webpack.config.base.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/configs/webpack.config.eslint.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/configs/webpack.config.main.prod.babel.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/configs/webpack.config.renderer.dev.babel.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/configs/webpack.config.renderer.dev.dll.babel.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/configs/webpack.config.renderer.prod.babel.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/editor.worker.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/flow-typed/module_vx.x.x.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/internals/mocks/fileMock.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/internals/scripts/BabelRegister.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/internals/scripts/CheckBuildsExist.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/internals/scripts/CheckNativeDep.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/internals/scripts/CheckNodeEnv.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/internals/scripts/CheckPortInUse.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/internals/scripts/CheckYarn.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/internals/scripts/ElectronRebuild.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/test/actions/counter.spec.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/test/components/Counter.spec.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/test/containers/CounterPage.spec.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/test/e2e/HomePage.e2e.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/test/e2e/helpers.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/test/example.js",
+      "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/test/reducers/counter.spec.js"
+    ],
+    "nodejsVersion": "v13.7.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "13.7.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "19.3.0",
+    "osVersion": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 33344570,
+        "nice": 0,
+        "sys": 15002850,
+        "idle": 52144310,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 9100910,
+        "nice": 0,
+        "sys": 3785820,
+        "idle": 87578280,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 30954240,
+        "nice": 0,
+        "sys": 12028360,
+        "idle": 57485340,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 9205960,
+        "nice": 0,
+        "sys": 3618670,
+        "idle": 87639810,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 29020530,
+        "nice": 0,
+        "sys": 10913460,
+        "idle": 60532740,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 9306810,
+        "nice": 0,
+        "sys": 3469520,
+        "idle": 87687550,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 27493430,
+        "nice": 0,
+        "sys": 10028070,
+        "idle": 62944080,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 9417670,
+        "nice": 0,
+        "sys": 3361390,
+        "idle": 87684250,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "60:f8:1d:d2:3c:a2",
+        "address": "10.174.48.69",
+        "netmask": "255.255.248.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "72:fa:d0:90:d7:5c",
+        "address": "fe80::70fa:d0ff:fe90:d75c",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 6
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "72:fa:d0:90:d7:5c",
+        "address": "fe80::70fa:d0ff:fe90:d75c",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 7
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::df37:d82f:8f1:456d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::6064:4932:c9f5:81bd",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "utun2",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::9cf0:f8b:9259:e5d2",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 13
+      }
+    ],
+    "host": "55.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000010015a0d6",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100082550",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100182b97",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100182b33",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010030afb5",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100312ecd",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000001002e23e3",
+      "symbol": "v8::internal::Factory::NewRawTwoByteString(int, v8::internal::AllocationType) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000001006221c7",
+      "symbol": "v8::internal::Runtime_AllocateSeqTwoByteString(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100954639",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2154713088,
+    "totalCommittedMemory": 2152994928,
+    "usedMemory": 2146309000,
+    "availableMemory": 45197056,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1152,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      },
+      "old_space": {
+        "memorySize": 31334400,
+        "committedMemory": 31246784,
+        "capacity": 30709944,
+        "used": 30709944,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 692224,
+        "committedMemory": 575904,
+        "capacity": 507968,
+        "used": 507968,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1576960,
+        "committedMemory": 1338976,
+        "capacity": 1041600,
+        "used": 1041600,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 2119176192,
+        "committedMemory": 2119176192,
+        "capacity": 2113471904,
+        "used": 2113471904,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 544544,
+        "used": 544544,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 3.48288,
+    "kernelCpuSeconds": 1.11054,
+    "cpuConsumptionPercent": 114.836,
+    "maxRss": 2260465614848,
+    "pageFaults": {
+      "IORequired": 0,
+      "IONotRequired": 560591
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "SHELL": "/bin/zsh",
+    "TMPDIR": "/var/folders/g9/c6kdgfnj06v8krj_s1wwq33r0000gn/T/",
+    "LIBRARY_PATH": "/usr/local/lib",
+    "SDKROOT": "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk",
+    "GIT_CONFIG_PARAMETERS": "'i18n.commitencoding=UTF-8' 'commit.verbose=false'",
+    "GIT_AUTHOR_DATE": "@1580915059 -0400",
+    "LC_ALL": "en_US.UTF-8",
+    "GIT_EDITOR": ":",
+    "USER": "lumberman",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.XdQoQDiXxK/Listeners",
+    "GIT_INDEX_FILE": "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/.git/index",
+    "CPATH": "/usr/local/include",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x52",
+    "GIT_WORK_TREE": ".",
+    "GIT_AUTHOR_NAME": "lumberman",
+    "GIT_PREFIX": "",
+    "PATH": "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/node_modules/.bin:/Users/lumberman/👩‍🚀 Work/GitHub/node_modules/.bin:/Users/lumberman/👩‍🚀 Work/node_modules/.bin:/Users/lumberman/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/bin:/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/node_modules/.bin:/Users/lumberman/👩‍🚀 Work/GitHub/node_modules/.bin:/Users/lumberman/👩‍🚀 Work/node_modules/.bin:/Users/lumberman/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core:/Applications/Tower.app/Contents/Resources/git-flow:/Applications/Tower.app/Contents/Resources/git-lfs:/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core:/Applications/Tower.app/Contents/Resources/git-flow:/Applications/Tower.app/Contents/Resources/git-lfs:/usr/bin:/bin:/usr/sbin:/sbin",
+    "_": "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet/node_modules/.bin/lint-staged",
+    "PWD": "/Users/lumberman/👩‍🚀 Work/GitHub/cheatsheet",
+    "LANG": "en_US.UTF-8",
+    "XPC_FLAGS": "0x0",
+    "XPC_SERVICE_NAME": "0",
+    "SHLVL": "3",
+    "HOME": "/Users/lumberman",
+    "LOGNAME": "lumberman",
+    "GIT_AUTHOR_EMAIL": "vlad@lumbermandesigns.com",
+    "GIT_PAGER": "cat",
+    "GIT_EXEC_PATH": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core",
+    "NODE_ENV": "development"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 24576,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 2784,
+      "hard": 4176
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/usr/local/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib"
+  ]
+}
