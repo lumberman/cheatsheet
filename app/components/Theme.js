@@ -3,6 +3,7 @@ const theme = {
 	activityBarBackground: "#323232", //"rgb(47,49,51)",
 	underPageBackground: "#202020",
 	sidebarBackground: "rgb(32,32,32)",
+	textColor: "#CDCDCD",
 };
 
 export default theme;

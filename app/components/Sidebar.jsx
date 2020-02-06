@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from './Theme'
+import theme from './Theme';
 
 const SideBarBlock = styled.section`
   flex-shrink: 0;

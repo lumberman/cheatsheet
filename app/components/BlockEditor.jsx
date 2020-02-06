@@ -10,11 +10,11 @@ import { Popover } from '@wordpress/components';
 import { useState } from '@wordpress/element';
 
 // Make sure to load the block editor stylesheets too
-import '@wordpress/components/build-style/style.css';
 import '@wordpress/block-editor/build-style/style.css';
 import '@wordpress/block-library/build-style/style.css';
 import '@wordpress/block-library/build-style/editor.css';
 import '@wordpress/block-library/build-style/theme.css';
+import '@wordpress/components/build-style/style.css';
 // Not 100% sure if these styles all needed:
 import '@wordpress/editor/build-style/style.css';
 import '@wordpress/format-library/build-style/style.css';
@@ -34,7 +34,7 @@ const BlockEditor = () => {
 		>
 			<WritingFlow>
 				<ObserveTyping>
-					<BlockList />
+					<BlockList __experimentalUIParts={ { hasPopover: false, hasSelectedUI: false } } />
 				</ObserveTyping>
 			</WritingFlow>
 			<Popover.Slot />
